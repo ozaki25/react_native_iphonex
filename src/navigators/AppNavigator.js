@@ -1,6 +1,6 @@
 import { StackNavigator } from 'react-navigation';
-import NormalView from '../components/NormalView';
-import IphoneXView from '../components/IphoneXView';
+import NormalView from '../screens/NormalView';
+import IphoneXView from '../screens/IphoneXView';
 
 const AppNavigtor = StackNavigator({
   normal: { screen: NormalView },
