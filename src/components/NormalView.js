@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,7 +17,10 @@ const styles = StyleSheet.create({
 const NormalView = ({ navigation }) => (
   <View style={styles.container}>
     <TouchableOpacity style={styles.contents} onPress={() => navigation.navigate('iphonex')}>
-      <Text>NormalView</Text>
+      <Text>
+        NormalView
+        <Icon name="md-alert" size={30} color="#900" />
+      </Text>
     </TouchableOpacity>
   </View>
 );
