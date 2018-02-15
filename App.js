@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 import AppNavigator from './src/navigators/AppNavigator';
 
 const App = () => (
-  <SafeAreaView>
+  <SafeAreaView style={{ flex: 1 }}>
     <AppNavigator />
   </SafeAreaView>
 );
