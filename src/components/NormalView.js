@@ -1,30 +1,19 @@
 import React from 'react';
-import {
-  Button,
-  Dimensions,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Button, Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Dialog } from 'react-native-simple-dialogs';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'lightgreen',
-  },
-  contents: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
 });
 
 const NormalView = ({ navigation }) => (
-  <View style={styles.container}>
-    <TouchableOpacity style={styles.contents} onPress={() => navigation.navigate('iphonex')}>
+  <React.Fragment>
+    <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('iphonex')}>
       <Text>NormalView</Text>
     </TouchableOpacity>
 
@@ -47,7 +36,7 @@ const NormalView = ({ navigation }) => (
         ))}
       </ScrollView>
     </Dialog>
-  </View>
+  </React.Fragment>
 );
 
 NormalView.navigationOptions = {
